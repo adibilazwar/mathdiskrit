@@ -1,11 +1,9 @@
-# Welcome to your Jupyter Book
+# Catatan Matematika Diskret
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Nama: Adibil Azwar
+NIM: 240411100022
 
-Check out the content pages bundled with this sample book to see more.
+Berikut adalah beberapa catatan materi yang saya buat materi dari Matematika Diskret yang saya buat:
 
 ```{tableofcontents}
 ```
