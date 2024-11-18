@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Graph &#8212; My sample book</title>
   
   
   
@@ -60,12 +60,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Graph';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Teori Himpunan" href="Himpunan.html" />
+    <link rel="prev" title="Algoritma" href="Algoritma.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +115,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +134,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,17 +161,17 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     <no title>
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Himpunan.html">Teori Himpunan</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Graph.html">Graph</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Graph</a></li>
 </ul>
 
     </div>
@@ -247,7 +243,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGraph.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +273,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Graph.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -353,11 +349,22 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Graph</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network">Social Network</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closenes-centrality">Closenes Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -367,17 +374,76 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#Catatan Matematika Diskret</p>
-<p>Nama: Adibil Azwar NIM: 240411100022</p>
-<p>Berikut adalah beberapa catatan materi yang saya buat materi dari Matematika Diskret yang saya buat:</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Himpunan.html">Teori Himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Himpunan.html#himpunan">HIMPUNAN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Graph.html">Graph</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="graph">
+<h1>Graph<a class="headerlink" href="#graph" title="Link to this heading">#</a></h1>
+<p>Graph merupakan kumpulan note yang saling berhubungan.</p>
+<section id="social-network">
+<h2>Social Network<a class="headerlink" href="#social-network" title="Link to this heading">#</a></h2>
+<p>Terdapat node yang mewakili  orang atau individu atau aktor. Relasi antar objek dapat dinyatakan dengan link atau edges yang terjadi antara aktor tersebut <em>Social Network</em> terdiri dari banyak aktor yang mempunyai relasi satu sama lain hingga membentuk petra jaringan sosial yang dinyatakan dengan <em>Graph</em></p>
+<ul class="simple">
+<li><p>Tidak semua node dalam jaringan adalah penting  (aktor)</p></li>
+<li><p>Mencari node yang paling penting dalam suatu jaringan</p></li>
+<li><p>Centrality adalah penentuan aktor menggunakan ukuran pada Social Network Centrality dalam teori graf dan social network .Dibagi menjadi empat jenis, yaitu
+– degree centrality,
+– closeness centrality,
+– betweeness centrality,</p></li>
 </ul>
-</div>
+</section>
+<section id="degree-centrality">
+<h2>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h2>
+<p>Degree Centrality adalah jumlah <em>edge</em> yang terkoneksi pada satu node yang mewakili interaksi.</p>
+<p>Pentingnya node ditentukan oleh jumlah node yang berdekatan dengan node tersebut</p>
+<ul class="simple">
+<li><p>Lebih besar derajatnya (degree), maka lebih penting node tersebut dalam suatu jaringan</p></li>
+<li><p>Hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan</p></li>
+</ul>
+<p><img alt="image" src="https://hackmd.io/_uploads/Bkqjx1IfJl.png" />
+degree centrality:
+<img alt="image" src="https://hackmd.io/_uploads/Byr1ZJ8zkg.png" />
+normalisasi degree centrality:
+<img alt="image" src="https://hackmd.io/_uploads/HJEgZy8z1x.png" /></p>
+<p>Untuk  node 1, degree centrality adalah 3;
+Normalisasi degree centrality adalah<br />
+3/(9-1)=3/8.</p>
+</section>
+<section id="closenes-centrality">
+<h2>Closenes Centrality<a class="headerlink" href="#closenes-centrality" title="Link to this heading">#</a></h2>
+<p>Closenes Centrality adalah nilai kedekatan antara satu node dengan node lain dalam jaringan dengan menghitung rata-rata dari jarak relasi node-node tersebut. Skor <em>Closeness Centrality</em> mewakili kecepatan dalam penyebaran informasi.</p>
+<p>Average Distance:
+<img alt="image" src="https://hackmd.io/_uploads/HkcKbkLzyx.png" />
+Closeness Centrality:
+<img alt="image" src="https://hackmd.io/_uploads/HyJJMk8Myx.png" /></p>
+<p>contoh Closeness Centrality:
+<img alt="image" src="https://hackmd.io/_uploads/HkZLN1IMJx.png" />
+<img alt="image" src="https://hackmd.io/_uploads/Hk68NJ8zkl.png" />
+<img alt="image" src="https://hackmd.io/_uploads/Hy0F4JUfJe.png" />
+Node 4  lebih central  dari node 3</p>
+</section>
+<section id="betweenness-centrality">
+<h2>Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Skor Betweenness Centrality mewakili beberapa besar informasi yang tersebatr dari suatu aktor . Semakin besar skor, artinya aktor tersebut semakin berperan dalam penyebaran informasi.</p></li>
+<li><p>Semakin banya lintasan yang harus melewati persimpangan itu (misal tidak ada jalan alternatif), maka semakin penting arti persimpangan tersebut. Hal ini menandakan seberapa besar suatu node diperlukan sebagai penghubung dalam penyebaran informasi di dalam jaringan.</p></li>
+<li><p>Ukuran ini juga bisa digunakan untuk mengidentifikasi <em>Boundary spanners</em>, yaitu orang atau node yang berperan sebagai penghubung (jembatan) antara dua komunitas.</p></li>
+</ul>
+<p>– Menghitung jumlah lintasan terpendek yang melewati suatu node
+– Node dengan  betweenness  tinggi  adalah penting dalam komunikasi dan penyebaran informasi
+– Betweenness Centrality</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/r1CEryUMyx.png" /></p>
+<p>Jumlah lintasan terpendek antara  s dan t
+<img alt="image" src="https://hackmd.io/_uploads/BJmDrk8z1x.png" />
+Jumlah lintasan terpendek antara s dan t yang melewati vi
+<img alt="image" src="https://hackmd.io/_uploads/HJ1KSy8Gyx.png" /></p>
+<p>Contoh Betweenness Centrality:
+<img alt="image" src="https://hackmd.io/_uploads/rJx2SkIf1e.png" />
+<img alt="image" src="https://hackmd.io/_uploads/SJmz8y8MJl.png" />
+<img alt="image" src="https://hackmd.io/_uploads/Hkmm8kUM1g.png" />
+betweenness centrality  untuk node 5?</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/rkuvUkUMkx.png" />
+Normalisasi Betweenness Centrality:
+<img alt="image" src="https://hackmd.io/_uploads/rJ5FU18zJl.png" /></p>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -409,14 +475,14 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="Himpunan.html"
-       title="next page">
+    <a class="left-prev"
+       href="Algoritma.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Teori Himpunan</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Algoritma</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -424,6 +490,25 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network">Social Network</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closenes-centrality">Closenes Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
