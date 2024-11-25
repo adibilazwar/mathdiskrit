@@ -1,4 +1,4 @@
-# Teori Himpunan
+# Himpunan
 ---
 jupytext:
   formats: md:myst

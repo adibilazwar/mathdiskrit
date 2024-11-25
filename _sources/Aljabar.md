@@ -1,6 +1,5 @@
 ---
-title: Aljabar Boolean dan Gerbang Logika
-
+title: Aljabar
 ---
 
 # Aljabar Boolean dan Gerbang Logika

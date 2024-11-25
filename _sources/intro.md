@@ -1,8 +1,9 @@
-#Catatan Matematika Diskret
+# Catatan matematika diskret
 
-Nama: Adibil Azwar NIM: 240411100022
+Name: Adibil Azwar 
+NIM: 240411100022
 
-Berikut adalah beberapa catatan materi yang saya buat materi dari Matematika Diskret yang saya buat:
+Berikut merupakan catatan materi Matematika Diskret saya.
 
 ```{tableofcontents}
 ```
