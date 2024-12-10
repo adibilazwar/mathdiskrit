@@ -23,15 +23,13 @@ title: UAS
  | P   | Q   | P$\rightarrow$Q |
 | --- | --- | ---------- |
 | B   | S   | S          |
-| S   | S   | S          |
+| S   | S   | B          |
 | B   | S   | S          |
 | B   | S   | S          |
 | S   | B   | S          |
 | S   | B   | S          |
 | B   | B   | B          |
-| S   | S   | S          |
-
-(P$\rightarrow$Q)= S
+| S   | S   | B          |
 
 
  | R   | S   | R$\rightarrow$S |
@@ -41,16 +39,20 @@ title: UAS
 | B   | S   | S          |
 | B   | B   | B          |
 | B   | B   | B          |
-| S   | S   | S          |
+| S   | S   | B          |
 | B   | B   | B          |
 | B   | S   | S          |
 
-(R$\rightarrow$S)= B
-
-jadi:
-(P$\rightarrow$Q) $\rightarrow$ (R$\rightarrow$S)= S (salah)
-
-
+ | P$\rightarrow$Q   | R$\rightarrow$S   | (P$\rightarrow$Q) $\rightarrow$ (R$\rightarrow$S) |
+| --- | --- | ---------- |
+| S   | B   | S          |
+| B   | B   | B          |
+| S   | S   | B          |
+| S   | B   | S          |
+| S   | B   | S          |
+| S   | B   | S          |
+| B   | B   | B          |
+| B   | S   | S          |
 ### soal 2
 ![Screenshot 2024-12-09 134524](https://hackmd.io/_uploads/rySVzf4Vkg.png)
 - Hitung Closenes Centrality dari G
